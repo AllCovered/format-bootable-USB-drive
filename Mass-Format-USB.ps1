@@ -1,4 +1,56 @@
-﻿function Get-DeviceLabel{
+﻿<#
+    .SYNOPSIS
+    Mass-Format-USB.ps1
+
+    Original Author(s):	Johnathan Milgie
+
+	Version 1.0.0, 12/10/2016
+
+	MIT License
+	
+	Copyright (c) 2016 Konica Minolta Business Solutions U.S.A., Inc. 
+	
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+	
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+	
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE. 
+
+    .DESCRIPTION
+    Description of the Process/Payload
+
+	Additional Credits:
+	Johan Arwidmark
+	https://goo.gl/IIIDm9
+
+	Tested On OS Version(s):
+	Windows 8.1, 10
+
+    .NOTES
+
+    Revision History
+	Version		Date		Description of changes
+    --------------------------------------------------------------------------------------------------------------
+	1.0.0		12/10/2016	Initial Release
+
+	.EXAMPLE
+    .\Mass-Format-USB.ps1
+
+#>
+
+function Get-DeviceLabel{
 [void][Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic')
 $title = 'USB Drive Label Entry'
 $msg   = 'Please enter the Label for the USB drive(s):'
